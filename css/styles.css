@@ -75,7 +75,17 @@ a:hover { color: var(--color-accent-700); }
   display: flex;
   align-items: center;
 }
-.brand img { height: 34px; width: auto; display: block; }
+.brand-logo { height: 46px; width: auto; display: block; }
+.brand-text {
+  display: none;
+  flex-direction: column;
+  line-height: 1.05;
+}
+.brand-name { font-size: 25px; font-weight: 700; letter-spacing: -0.01em; }
+.brand-tag {
+  font-size: 12px; font-weight: 500; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--color-neutral-700);
+}
 .site-nav {
   margin-left: auto;
   display: flex;
@@ -257,4 +267,6 @@ a:hover { color: var(--color-accent-700); }
 
 @media (max-width: 640px) {
   body { font-size: 18px; }
+  .brand-logo { display: none; }
+  .brand-text { display: flex; }
 }
