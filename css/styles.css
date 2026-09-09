@@ -223,16 +223,16 @@ a:hover { color: var(--color-accent-700); }
 /* — about — */
 .about {
   padding-top: 72px; padding-bottom: 72px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 48px;
-  align-items: start;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 .about-photos {
-  display: flex; flex-direction: column; gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
 }
-.about-photo-portrait { width: 100%; aspect-ratio: 4 / 5; max-width: 400px; overflow: hidden; }
-.about-photo-extra { width: 100%; aspect-ratio: 3 / 2; max-width: 400px; overflow: hidden; }
+.about-photo { width: 100%; aspect-ratio: 4 / 5; overflow: hidden; }
 .about-photos img { width: 100%; height: 100%; object-fit: cover; }
 .about-copy {
   display: flex; flex-direction: column; gap: 22px; align-items: flex-start;
